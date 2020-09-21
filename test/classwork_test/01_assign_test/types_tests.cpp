@@ -10,5 +10,5 @@ TEST_CASE("Verify Test Configuration", "verification") {
 TEST_CASE("Test multiply_numbers function") 
 {
 	REQUIRE(multiply_numbers(10) == 50);
-  REQUIRE(multiply_number(2) ==10);
+  REQUIRE(multiply_numbers(2) ==10);
 }
