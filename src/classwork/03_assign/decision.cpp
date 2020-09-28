@@ -1,6 +1,6 @@
 #include"decision.h"
 //cpp
-std::string letter_grade_using_if(int grade)
+std::string get_letter_grade_using_if(int grade)
 {
   std::string grade_as_letter;
 
@@ -26,25 +26,30 @@ std::string letter_grade_using_if(int grade)
 return grade_as_letter;
 }
 
-std::string letter_grade_using_switch(int grade1)
+std::string get_letter_grade_using_switch(int grade1)
 {
   std::string return_val;
 
-  switch(grade1)
+  switch(grade1/10)
   {
-  case 90:
+  case 9:
       return_val = "A";
       break;
-  case 80:
+  case 8:
       return_val =  "B";
       break;
-  case 70:
+  case 7:
       return_val =  "C";
       break;    
-  case 60:
+  case 6:
       return_val = "D";
       break; 
-  case 50:
+  case 5:
+  case 4:
+  case 3:
+  case 2:
+  case 1: 
+  case 0:
       return_val = "F";
       break;   
 
